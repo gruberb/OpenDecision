@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="opendecision" ng-controller="OpenDecisionController" ng-strict-di>
+  <head>
+    <title ng-bind="pageTitle"></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- compiled CSS -->
+    <% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+
+    <!-- compiled JavaScript -->
+    <% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="<%= file %>"></script><% }); %>
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="assets/images/od_logo.png"></a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div ng-if="isAuthenticated" class="userProfile">
+            <p>{{user}}</p>
+            <a ng-click="logout()">Log Out</a>
+          </div><!-- /.navbar-collapse -->
+      </nav>
+    </header>
+
+    <div id="main_view" ui-view="main"></div>
+
+  </body>
+</html>

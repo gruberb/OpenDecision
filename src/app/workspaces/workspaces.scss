@@ -1,0 +1,88 @@
+#workspaceList {
+  height: 100%;
+  width: 29%;
+  float: left;
+  overflow: auto;
+}
+.newButton {
+  color: white;
+  width: 97%;
+  height: 50px;
+  font-size: 15pt;
+  font-weight: 300;
+  background-color: #ff7256;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px;
+  margin-bottom: 15px;
+}
+.twoPanes {
+  height: 100%;
+}
+.workspaceEntry {
+  width: 97%;
+  padding: 15px;
+  border: 1px solid #4e00ff;
+  color: #4e00ff;
+  margin-bottom: 15px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #4e00ff;
+    color: white;
+  }
+}
+.workspaceTitle {
+  font-size: 1.6em;
+  display: block;
+}
+.arrow_right {
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #4e00ff;
+}
+#workspaceDetail {
+  height: 100%;
+  width: 70%;
+  float: right;
+  border-right: 2px solid rgb(240,240,240);
+  border-top: 2px solid rgb(240,240,240);
+  border-bottom: 2px solid rgb(240,240,240);
+  overflow-y: scroll;
+}
+.tagsLogo {
+  width: 45px;
+  padding-right: 10px;
+}
+.panel-group .panel,
+.panel {
+  border-radius: 0px;
+  border-color: #4e00ff;
+  width: 97%;
+}
+.panel-default > .panel-heading {
+  border-radius: 0px;
+  border-color: #4e00ff;
+  background-color: #4e00ff;
+  color: white;
+}
+.panel-title {
+  font-size: 15pt;
+}
+.panel-title small {
+  padding-left: 10px;
+}
+.panel-body {
+  font-size: 14pt;
+}
+.panel-footer {
+  font-size: 12pt;
+  color: #ff7256;
+  background-color: white;
+}
+.activeWorkspace {
+  background-color: #4e00ff;
+  color: white;
+}

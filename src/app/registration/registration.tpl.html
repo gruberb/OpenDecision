@@ -1,0 +1,16 @@
+<form class="form-signin" name="registerForm" ng-controller="RegistrationController"
+ng-submit="register(credentials)">
+
+  <h2 class="form-signin-heading">SIGN UP</h2>
+
+  <input type="text" id="username" class="form-control" placeholder="Username" required="" autofocus="" ng-model="credentials.username" name="username">
+
+  <input type="text" id="email" class="form-control" placeholder="E-Mail" required="" ng-model="credentials.email" name="email">
+
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" ng-model="credentials.password" name="password">
+
+  <input type="password" id="reenterPassword" class="form-control" placeholder="Re-Enter Password" required="" ng-model="credentials.reenterpassword" name="reenterpassword">
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">SIGN UP</button>
+
+</form>

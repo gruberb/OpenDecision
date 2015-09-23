@@ -1,0 +1,26 @@
+.form-signin input,
+.form-signin select {
+  border-color: #4e00ff;
+  width: 300px;
+  height: 50px;
+  border-radius: 0px;
+  margin-bottom: 15px;
+  font-size: 18pt;
+}
+.form-signin button {
+  color: white;
+  width: 300px;
+  height: 50px;
+  font-size: 15pt;
+  font-weight: 300;
+  background-color: #ff7256;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px;
+}
+.form-signin button:hover {
+  background-color: #ff7256;
+}
+.form-signin .cancelButton:hover {
+  background-color: white;
+}

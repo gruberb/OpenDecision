@@ -1,0 +1,30 @@
+<div class="container twoPanes">
+  <div id="workspaceList">
+    <button class="newButton" ui-sref="createWorkspace">Create New Workspace</button>
+    <div class="workspaceEntry" ng-repeat="workspace in workspaces" ng-click="showDetails(workspace)" ng-class="{activeWorkspace: isSelectedWorkspace(workspace.title)}">
+      <div class="workspaceTitle">{{workspace.title}}</div>
+    </div>
+  </div>
+  <div id="workspaceDetail">
+    <button class="newButton" ui-sref="createDecision">Make New Decision</button>
+    <div class="panel-group" ng-repeat="decision in selectedWorkspace.decisions" id="{{decision.title}}">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            {{decision.title}}</a><small>Decision made: {{decision.creationDate}}</small>
+          </h4>
+        </div>
+        <div id="{{decision.id}}" class="panel-collapse">
+          <div class="panel-body">
+            <p>Description: {{decision.description}}</p>
+            <p>Cost: {{decision.cost}} €</p>
+            <p>Time: {{decision.time}} hours</p>
+            <p>Success: {{decision.success}}</p>
+          </div>
+        </div>
+        <div class="panel-footer"><img class="tagsLogo" src="./assets/images/tags.png"><span ng-repeat="tags in decision.tags">{{tags}}</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+

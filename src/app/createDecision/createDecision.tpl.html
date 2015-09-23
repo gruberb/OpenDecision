@@ -1,0 +1,29 @@
+<form class="form-signin" name="registerForm" ng-controller="CreateDecisionController"
+ng-submit="createDecision(decision)">
+
+  <h2 class="form-signin-heading">Create a new decision</h2>
+
+  <input type="text" id="title" class="form-control" placeholder="Title" required="" autofocus="" ng-model="decision.title" name="title">
+
+  <input type="text" id="description" class="form-control" placeholder="Description" required="" ng-model="decision.description" name="description">
+
+  <select ng-model="decision.workspaceId" class="form-control">
+    <option ng-repeat="workspace in workspaces" value="{{workspace.id}}">{{workspace.title}}</option>
+  </select>
+
+  <input type="number" id="cost" class="form-control" placeholder="Cost $" ng-model="decision.cost" name="cost">
+
+  <input type="text" id="tags" class="form-control" placeholder="Tags" ng-model="decision.tags" name="tags">
+
+  <select ng-model="decision.success" class="form-control">
+    <option value="" disabled selected>Was this decision a success?</option>
+    <option value="true">Yes</option>
+    <option value="false">No</option>
+  </select>
+
+  <input type="date" id="date" class="form-control" placeholder="Date" ng-model="decision.creationDate" name="date">
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+  <button class="btn btn-lg btn-primary btn-block cancelButton" ui-sref="workspaces">Cancel</button>
+
+</form>

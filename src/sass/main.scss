@@ -1,0 +1,71 @@
+/**
+ * This is the main application stylesheet. It should include or import all
+ * stylesheets used throughout the application as this is the only stylesheet in
+ * the Grunt configuration that is automatically processed.
+ */
+
+/**
+ * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
+ * project should be imported as the rest are just wasting space.
+ */
+
+
+/**
+ * This is our main variables file. We must include it last so we can overwrite any variable
+ * definitions in our imported stylesheets.
+ */
+@import 'vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'variables.scss';
+
+/**
+ * Typography
+ */
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,500,700);
+
+@font-face {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+}
+
+html, body {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  background-color: #f4f4f2;
+  min-width: 800px;
+}
+
+input {
+  padding: 10px
+}
+
+#main_view {
+  height: 88%;
+}
+/**
+* Bootstrap overridng
+**/
+.container {
+  width: 100%;
+}
+
+.panel-group {
+  margin-bottom: 5px;
+}
+
+/**
+* Include the SASS files for the header
+**/
+@import 'top_navbar.scss';
+
+/**
+ * Now that all app-wide styles have been applied, we can load the styles for
+ * all the submodules and components we are using.
+ *
+ * TODO: In a later version of this boilerplate, I'd like to automate this.
+ */
+
+@import '../app/workspaces/workspaces.scss';
+@import '../app/login/login.scss';
+@import '../app/registration/registration.scss';
+@import '../app/createWorkspace/createWorkspace.scss';

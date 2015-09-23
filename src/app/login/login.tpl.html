@@ -1,0 +1,8 @@
+<form class="form-signin" id="loginForm" name="loginForm" ng-controller="LoginController"
+ng-submit="login(credentials)">
+  <h2 class="form-signin-heading">LOG IN</h2>
+  <input type="text" id="username" class="form-control" placeholder="Username" required="" autofocus="" ng-model="credentials.username" name="username">
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" ng-model="credentials.password" name="password">
+  <div class="errorMessage" ng-if="invalid"><span>Wrong username/password</span></div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>

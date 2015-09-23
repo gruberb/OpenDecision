@@ -1,0 +1,21 @@
+<form class="form-signin" name="registerForm" ng-controller="CreateWorkspaceController"
+ng-submit="createWorkspace(workspace)">
+
+  <h2 class="form-signin-heading">New Workspace</h2>
+
+  <label for="title" class="sr-only">Title</label>
+  <input type="text" id="title" class="form-control" placeholder="Title" required="" autofocus="" ng-model="workspace.title" name="title">
+
+  <label for="description" class="sr-only">Description</label>
+  <input type="text" id="description" class="form-control" placeholder="Description" required="" ng-model="workspace.description" name="description">
+
+  <label for="category" class="sr-only">Category</label>
+  <input type="text" id="category" class="form-control" placeholder="Category" required="" ng-model="workspace.category" name="category">
+
+   <label for="tags" class="sr-only">Tags</label>
+  <input type="text" id="tags" class="form-control" placeholder="Tags" required="" ng-model="workspace.tags" name="tags">
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+  <button class="btn btn-lg btn-primary btn-block cancelButton" ui-sref="workspaces">Cancel</button>
+
+</form>
