@@ -6,5 +6,6 @@ OpenDecision is a platform where you can enter and log your decisions. Categorie
 
 1. `git clone git@github.com:OpenDecision/openFrontend.git`
 2. `cd openFrontend`
-3. `npm install & grunt install`
-4. `grunt serve`
+3. `npm install`
+5. `grunt install` 
+6. `grunt serve`
