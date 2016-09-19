@@ -11,6 +11,7 @@
     "chartist": "~0.7.3",
     "chartist-directive": "~1.0.5",
     "angular-local-storage": "~0.1.5",
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "bootstrap-sass": "^3.3.7"
   }
 }

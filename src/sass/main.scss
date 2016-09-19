@@ -14,7 +14,7 @@
  * This is our main variables file. We must include it last so we can overwrite any variable
  * definitions in our imported stylesheets.
  */
-@import 'vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 @import 'variables.scss';
 
 /**

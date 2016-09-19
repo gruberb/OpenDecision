@@ -19,7 +19,7 @@ describe('AuthenticationService', function() {
         deferred.resolve('Remote call result');
 
         return deferred.promise;
-§    });
+    });
   }));
 
   it('calls login and returns a promise', inject(function() {

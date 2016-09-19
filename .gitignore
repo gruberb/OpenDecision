@@ -1,9 +1,9 @@
 *.sw*
 *~
 build/
-bin/
 node_modules/
 vendor/
 .sass-cache/
 .DS_STORE
 .grunt
+bower_components
