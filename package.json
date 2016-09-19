@@ -3,7 +3,10 @@
   "name": "decisionFrontend",
   "version": "1.0.0",
   "homepage": "",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  },
   "devDependencies": {
     "bower": "^1.4.1",
     "grunt": "~0.4.1",
