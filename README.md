@@ -4,8 +4,8 @@ OpenDecision is a platform where you can enter and log your decisions. Categorie
 
 ## Install
 
-1. `git clone git@github.com:OpenDecision/openFrontend.git`
+1. `git clone git@github.com:gruberb/OpenDecision.git`
 2. `cd openFrontend`
 3. `npm install`
-5. `grunt install` 
+5. `grunt install`
 6. `grunt serve`
