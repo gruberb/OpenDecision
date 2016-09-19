@@ -6,7 +6,7 @@ Api.$inject = ['$http'];
 
 function Api($http) {
 
-  var baseUrl = 'http://localhost:3000/api/';
+  var baseUrl = 'https://opendecision.herokuapp.com/api/';
 
   function getWorkspaces() {
     return $http({
@@ -24,7 +24,6 @@ function Api($http) {
   }
 
   function createDecision(workspaceId, decision) {
-    console.log(workspaceId);
     return $http({
       method: 'POST',
       url: baseUrl + 'workspaces/' + workspaceId + '/decisions',
