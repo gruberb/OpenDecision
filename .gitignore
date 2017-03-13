@@ -7,3 +7,4 @@ vendor/
 .DS_STORE
 .grunt
 bower_components
+bin

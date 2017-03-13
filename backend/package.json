@@ -1,0 +1,16 @@
+{
+  "name": "OpenDecision",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.12.4",
+    "cors": "^2.7.1",
+    "express": "^4.12.4",
+    "jsonwebtoken": "^5.0.1",
+    "mongoose": "^4.0.4",
+    "morgan": "^1.5.3",
+    "passport": "^0.2.2",
+    "passport-http": "^0.2.2",
+    "validate.js": "^0.7.1"
+  }
+}
